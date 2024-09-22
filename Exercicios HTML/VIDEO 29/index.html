@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores de Atributos</title>
+
+    <style>
+        /*Seletor universal*/
+        * {
+            text-align: left;
+            color: lightgreen;
+        }
+
+        /* Elementos <a> com href igual a http://www.bosontreinamentos.com.br */
+            a[href="http://www.bosontreinamentos.com.br"] {
+                font-size: 25px;
+                color: red;
+            }
+
+         /* Elementos <div> com ID com que contenha a palavra "parte" */
+             div[id*="parte"] {
+                 color: crimson;
+                 font-size: 50px;
+                }  
+
+         /* Elementos <a> com href terminando em .br */
+            a[href="https"] {
+                fonte-style:bold;
+                color: green;
+                }
+
+         /*Elementos que pertencem a classe cl1,entre outros */
+              *[class~="cl1"] {
+                color: purple;
+                background-color: yellowgreen;
+                }
+    </style>
+
+</head>
+<body>
+
+    <h2>Estilos CSS</h2>
+    <p>Seletor de Atributos</p>
+    <h2 class="cl1 cl2 cl3">Segunda seção do Arquivo HTML</h2>
+    <p id="id1">Parágrafo com ID</p>
+    <a href="http://www.bosontreinamentos.com.br" class="cl1 cl2">Bóson Treinamento</a> <br>
+    <a href="https://www.diariondonaturalista.com.br" class="cl2">Diário do Naturalista</a> <br>
+    <a href="https://www.ibm.com">IBM</a>
+    <p class="part1 cl1">Parágrafo com classe</p>
+    <div id="parte1">Div 01</div>
+    <div id="parte2">Div 02</div>
+    <div id="seção3">Div 03</div>
+    <div id="parte3">Div o4</div>
+
+
+
+</body>
+</html>

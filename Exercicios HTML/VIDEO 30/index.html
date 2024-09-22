@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinadores</title>
+
+    <style>
+        /* Seletor univeral*/
+        * {
+            color: black;
+            text-align: left;
+        }
+
+        /*
+        Seletores cimbinadores
+        1. Irmão adjancente
+        2. Irmão geral
+        3. Filho
+        4. Descendente
+        */
+
+        /*Seletor descendente*/
+        div p {
+            background-color: green;
+            color: white;
+        }
+
+        /* Seletor de filho (>)*/
+        div > p {
+            background-color: blue;
+            color: yellow;
+        }
+
+        /* Seletor de Irmão Adjancente */
+        div + h2 {
+            text-align: center;
+            color: purple;
+        }
+
+        /* Seletor de Irmão Geral */
+        div ~ p {
+            text-align: center;
+            color: orangered;
+            font-size: 45px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h2>Combinadores CSS</h2>
+    </header>
+    <p>Aula de Desenvolvimento Web</p>
+    <div id="a">
+        <pre>
+            <p>Parágrafo descendente</p>
+        </pre>
+        <p>Parágrafo filho</p>
+    </div>
+    <h2>Segunda parte do Arquivo HTML</h2>
+    <p>Parágrafo da Segunda Parte</p>
+    <h2>Terceira parte do Arquivo HTML</h2>
+    <p>Parágrafo da terceira parte</p>
+</body>
+</html>

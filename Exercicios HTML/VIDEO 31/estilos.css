@@ -1,0 +1,15 @@
+.conteiner-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: orange;
+    padding: 10px;
+    column-gap: 5px;
+}
+
+.conteiner-grid > div {
+    background-color: white;
+    border: 1px solid;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
